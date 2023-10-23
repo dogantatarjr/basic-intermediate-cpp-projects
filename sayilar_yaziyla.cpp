@@ -6,16 +6,16 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Turkish");
 
-    int y, o, b, sayi;
+    int yuzler, onlar, birler, sayi;
 
     cout << "1 ile 999 arasında bir tam sayı giriniz: ";
     cin >> sayi;
 
-    y = sayi / 100;
-    o = sayi % 100 / 10;
-    b = sayi % 100 % 10;
+    yuzler = sayi / 100;
+    onlar = sayi % 100 / 10;
+    birler = sayi % 100 % 10;
 
-    switch (y){
+    switch (yuzler){
         case 0:
             cout << "";
             break;
@@ -48,7 +48,7 @@ int main() {
             break;
     }
 
-    switch (o) {
+    switch (onlar) {
     case 0:
         cout << " ";
         break;
@@ -81,7 +81,7 @@ int main() {
         break;
     }
 
-    switch (b) {
+    switch (birler) {
     case 0:
         cout << "";
         break;
